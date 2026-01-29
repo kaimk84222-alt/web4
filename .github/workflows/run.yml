@@ -1,30 +1,30 @@
-name: Auto-Post Engine
+name: Auto Content Generator
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
-  workflow_dispatch:
+    # يعمل كل 10 دقائق
+    - cron: '*/10 * * * *'
+  workflow_dispatch: # يسمح لك بتشغيله يدوياً للتجربة
 
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-      - uses: actions/setup-python@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
       - name: Run Generator
-        run: python amed.py
+        run: python generator_pro.py
 
-      - name: Commit changes
+      - name: Commit and Push changes
         run: |
-          git config user.name "GitHub Bot"
-          git config user.email "actions@github.com"
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git add .
-          git commit -m "auto generate pages" || echo "no changes"
+          git commit -m "Auto-generate 200 new pages" || exit 0
           git push
