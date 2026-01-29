@@ -19,7 +19,7 @@ jobs:
           python-version: '3.9'
 
       - name: Run Generator
-        run: python generator_pro.py
+        run: python amed.py
 
       - name: Commit and Push changes
         run: |
@@ -28,3 +28,4 @@ jobs:
           git add .
           git commit -m "Auto-generate 200 new pages" || exit 0
           git push
+
