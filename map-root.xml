@@ -10,4 +10,9 @@
     <loc>https://rs.texaslinuxfest.org/map-pages.xml</loc>
     <lastmod>2026-01-31</lastmod>
   </sitemap>
+
+  <sitemap>
+    <loc>https://rs.texaslinuxfest.org/map-videos.xml</loc>
+    <lastmod>2026-01-31</lastmod>
+  </sitemap>
 </sitemapindex>
