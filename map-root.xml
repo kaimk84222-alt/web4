@@ -70,4 +70,9 @@
     <loc>https://rs.texaslinuxfest.org/map-extra13.xml</loc>
     <lastmod>2026-02-08</lastmod>
   </sitemap>
+
+  <sitemap>
+    <loc>https://rs.texaslinuxfest.org/map-extra14.xml</loc>
+    <lastmod>2026-02-08</lastmod>
+  </sitemap>
 </sitemapindex>
