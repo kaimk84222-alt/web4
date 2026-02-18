@@ -125,4 +125,9 @@
     <loc>https://rs.texaslinuxfest.org/map-extra24.xml</loc>
     <lastmod>2026-02-18</lastmod>
   </sitemap>
+
+  <sitemap>
+    <loc>https://rs.texaslinuxfest.org/map-extra25.xml</loc>
+    <lastmod>2026-02-18</lastmod>
+  </sitemap>
 </sitemapindex>
